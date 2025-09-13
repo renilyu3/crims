@@ -1,0 +1,215 @@
+/* Account Management Styles */
+
+.accounts-dashboard {
+  padding: 0;
+}
+
+.accounts-dashboard .card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.5rem;
+}
+
+.accounts-dashboard .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+}
+
+/* Stats Cards */
+.accounts-dashboard .card.bg-primary,
+.accounts-dashboard .card.bg-success,
+.accounts-dashboard .card.bg-warning,
+.accounts-dashboard .card.bg-info {
+  border: none;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.accounts-dashboard .card.bg-primary .card-body,
+.accounts-dashboard .card.bg-success .card-body,
+.accounts-dashboard .card.bg-warning .card-body,
+.accounts-dashboard .card.bg-info .card-body {
+  padding: 1.5rem;
+}
+
+/* Avatar Styles */
+.avatar-sm {
+  width: 32px;
+  height: 32px;
+  font-size: 0.875rem;
+}
+
+.avatar-lg {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+}
+
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #6c757d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* User Detail Styles */
+.user-detail .card {
+  margin-bottom: 1.5rem;
+}
+
+.user-detail .form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.user-detail p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Form Styles */
+.create-user .form-label,
+.edit-user .form-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.create-user .form-control,
+.edit-user .form-control,
+.create-user .form-select,
+.edit-user .form-select {
+  border-radius: 0.375rem;
+  border: 1px solid #ced4da;
+}
+
+.create-user .form-control:focus,
+.edit-user .form-control:focus,
+.create-user .form-select:focus,
+.edit-user .form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Table Styles */
+.accounts-dashboard .table {
+  margin-bottom: 0;
+}
+
+.accounts-dashboard .table th {
+  border-top: none;
+  font-weight: 600;
+  color: #495057;
+  background-color: #f8f9fa;
+}
+
+.accounts-dashboard .table td {
+  vertical-align: middle;
+  padding: 1rem 0.75rem;
+}
+
+.accounts-dashboard .btn-group-sm .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Badge Styles */
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Alert Styles */
+.alert {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+/* Loading Spinner */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .accounts-dashboard .table-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .accounts-dashboard .btn-group-sm .btn {
+    padding: 0.125rem 0.25rem;
+    font-size: 0.75rem;
+  }
+  
+  .avatar-sm {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Filter Card */
+.accounts-dashboard .card-body .row.g-3 {
+  margin: 0;
+}
+
+.accounts-dashboard .card-body .row.g-3 > * {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+/* Status Indicators */
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.status-indicator.online {
+  background-color: #28a745;
+}
+
+.status-indicator.offline {
+  background-color: #dc3545;
+}
+
+/* Form Sections */
+.create-user h6.text-muted,
+.edit-user h6.text-muted {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 0.375rem;
+  font-weight: 500;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-warning:hover,
+.btn-outline-success:hover,
+.btn-outline-secondary:hover,
+.btn-outline-danger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}

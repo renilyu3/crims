@@ -1,0 +1,122 @@
+/* Toast notification animations */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateX(100%) scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-10%) scale(1.05);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translateX(5%) scale(0.95);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Base toast notification styling - MUST be applied first */
+.toast-notification {
+  min-width: 350px;
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+  /* Initial state - positioned off-screen */
+  transform: translateX(100%);
+  opacity: 0;
+  transition: none !important; /* Disable Bootstrap transitions */
+}
+
+/* Animation classes */
+.toast-enter {
+  animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards !important;
+}
+
+.toast-exit {
+  animation: slideOutRight 0.4s ease-in-out forwards !important;
+}
+
+/* Ensure animations work with Bootstrap toast classes */
+.toast-notification.toast-enter {
+  animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards !important;
+}
+
+.toast-notification.toast-exit {
+  animation: slideOutRight 0.4s ease-in-out forwards !important;
+}
+
+.toast-notification .toast-body {
+  padding: 1rem 1.25rem;
+}
+
+.toast-icon-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.toast-content {
+  flex-grow: 1;
+}
+
+.toast-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.toast-message {
+  font-size: 0.9rem;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+/* Success toast specific styling */
+.toast-success {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+}
+
+/* Error toast specific styling */
+.toast-error {
+  background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%) !important;
+}
+
+/* Close button enhancement */
+.toast-notification .btn-close {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.toast-notification .btn-close:hover {
+  opacity: 1;
+}

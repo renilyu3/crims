@@ -1,0 +1,25 @@
+/* Enhanced Login Form Styles */
+.enhanced-login-form input::placeholder {
+  color: #aaaaaa !important;
+  opacity: 1 !important;
+}
+
+.enhanced-login-form input::-webkit-input-placeholder {
+  color: #aaaaaa !important;
+  opacity: 1 !important;
+}
+
+.enhanced-login-form input::-moz-placeholder {
+  color: #aaaaaa !important;
+  opacity: 1 !important;
+}
+
+.enhanced-login-form input:-ms-input-placeholder {
+  color: #aaaaaa !important;
+  opacity: 1 !important;
+}
+
+.enhanced-login-form input:-moz-placeholder {
+  color: #aaaaaa !important;
+  opacity: 1 !important;
+}
